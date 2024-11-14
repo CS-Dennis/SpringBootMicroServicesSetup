@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: service1
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/service1_db
+    username: root
+    password: dennis
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
